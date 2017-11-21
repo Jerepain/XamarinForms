@@ -2,44 +2,30 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:App1"
-          x:Name="myMainPage"
+             xmlns:input="clr-namespace:Telerik.XamarinForms.Input;assembly=Telerik.XamarinForms.Input"
+             x:Name="myMainPage"
              
              x:Class="App1.MainPage">
     <ContentPage.BindingContext>
         <local:MainPageViewModel></local:MainPageViewModel>
     </ContentPage.BindingContext>
-    <!--<ContentView Padding="0,20,0,0" 
-                 ControlTemplate="{StaticResource ExpanderTemplate}">
-        <StackLayout>
-        <Label Text="Contenuu"/>
-        <Label Text="Contenuu"/>
-        <Label Text="Contenuu"/>
-        <Label Text="Contenuu"/>
-        </StackLayout>
-    </ContentView>-->
+
+    <!--<local:Breadcrumb Command="{Binding BreadcrumbCommand}" ItemsSource="{Binding Items}" />-->
+
+    <StackLayout>
+        <local:Breadcrumb Command="{Binding BreadcrumbCommand}" ItemsSource="{Binding Items}"  />
+        <local:FieldsetUserControl Header="plop">
+          
+                <local:CustomEntry Text="{Binding Test}" >
+                <!--<Entry.Effects>
+                    <local:RedEntryEffect />
+                </Entry.Effects>-->
+
+            </local:CustomEntry>
+        
 
 
-<StackLayout>
-    <Label Text="{Binding Test}"></Label>
-    <local:Breadcrumb Command="{Binding BreadcrumbCommand}" ItemsSource="{Binding Items}" />
-</StackLayout>
+        </local:FieldsetUserControl>
+    </StackLayout>
 
-
-
-    <!--<local:FieldsetUserControl Header="plop"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" >
-        <StackLayout>
-            <telerikInput:RadDataForm x:Name="dataForm">
-                <telerikInput:RadDataForm.Source>
-                    <local:SourceItem />
-                </telerikInput:RadDataForm.Source>
-            </telerikInput:RadDataForm>
-
-            </StackLayout>
-
-
-    </local:FieldsetUserControl>-->
-  
-
-</ContentPage>  
+</ContentPage>
