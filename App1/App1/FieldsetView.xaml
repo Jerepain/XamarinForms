@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            x:Name="this"               
+      ControlTemplate="{StaticResource ExpanderTemplate}"
+            x:Class="App1.FieldsetView">
+    <!--<ContentView Padding="0,20,0,0" 
+                 ControlTemplate="{StaticResource ExpanderTemplate}"/>-->
+    
+    
+    
+    <!--<Grid.RowDefinitions>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="*"/>
+    </Grid.RowDefinitions>
+    <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="*"/>
+        <ColumnDefinition Width="Auto"/>
+        <ColumnDefinition Width="*"/>
+        <ColumnDefinition Width="Auto"/>
+    </Grid.ColumnDefinitions>
+
+    <BoxView Margin="5,0,0,0" VerticalOptions="Center"  HeightRequest="1" Color="Black" />
+    <Label HorizontalOptions="Center" VerticalOptions="Center" VerticalTextAlignment="Center" Text="{Binding Header, Source={x:Reference this}}" Grid.Column="1" />
+    <BoxView VerticalOptions="Center"  HeightRequest="1" Color="Black" Grid.Column="2"/>
+    <Switch Margin="0,0,5,0" HorizontalOptions="End" x:Name="Toggle" Grid.Column="3"/>
+
+  
+
+    <ContentView Padding="0,20,0,0"
+                 ControlTemplate="{StaticResource TealTemplate}" Grid.Row="1" Grid.ColumnSpan="4">
+        <ContentPresenter></ContentPresenter>
+
+    </ContentView>-->
+
+
+
+    <!--<Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="Auto"/>
+        </Grid.ColumnDefinitions>
+
+        <BoxView Margin="5,0,0,0" VerticalOptions="Center"  HeightRequest="1" Color="Black" />
+        <Label HorizontalOptions="Center" VerticalOptions="Center" VerticalTextAlignment="Center" Text="{Binding Title, Source={x:Reference this}}" Grid.Column="1" />
+        <BoxView VerticalOptions="Center"  HeightRequest="1" Color="Black" Grid.Column="2"/>
+        <Switch Margin="0,0,5,0" HorizontalOptions="End" x:Name="Toggle" Grid.Column="3"/>
+
+        <ContentPresenter  Grid.Row="1" Grid.ColumnSpan="4"/>-->
+  
+</ContentView>
