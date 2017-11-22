@@ -13,7 +13,7 @@ namespace App1.iOS
         {
             base.OnElementChanged(e);
             if (Control == null) return;
-            Control.Layer.BorderWidth = 2;
+            Control.Layer.BorderWidth = 1;
             Control.Layer.BorderColor = Color.DarkGray.ToCGColor();
         }
 

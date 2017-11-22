@@ -15,14 +15,15 @@
     <StackLayout>
         <local:Breadcrumb Command="{Binding BreadcrumbCommand}" ItemsSource="{Binding Items}"  />
         <local:FieldsetUserControl Header="plop">
-          
-                <local:CustomEntry Text="{Binding Test}" >
+          <StackLayout>
+                <local:CustomEntry MinimumWidthRequest="20">
                 <!--<Entry.Effects>
                     <local:RedEntryEffect />
                 </Entry.Effects>-->
 
-            </local:CustomEntry>
-        
+            </local:CustomEntry >
+                <Entry MinimumWidthRequest="20"/>
+          </StackLayout>
 
 
         </local:FieldsetUserControl>
