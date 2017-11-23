@@ -24,7 +24,7 @@ namespace App1.iOS
             global::Xamarin.Forms.Forms.Init();
             Telerik.XamarinForms.Common.iOS.TelerikForms.Init();
             LoadApplication(new App());
-
+            SvgImageRenderer.Init();
             return base.FinishedLaunching(app, options);
         }
     }
